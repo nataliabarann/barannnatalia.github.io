@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Curriculum</title>
+    <link rel="stylesheet" type ="text/css" href="css/hoja_de_estilos.css" />
+</head>
+<body>
+    
+
+ <header> 
+     <h1 class="titulo">Mi CV - Natalia Paola</h1>
+ </header>
+
+ <figure>
+    <img class="perfil" src="css/79.jpg" alt="Imagen de perfil">
+</figure>
+    
+
+<nav>
+    <button class="nav-boton" onclick="accion1()">Datos Personales</button>
+<section class="nav-enlace1 desaparece1"> 
+    
+    <p>Fecha de Nacimiento: 13/1/1911</p>
+    <p>Lugar de Nacimiento: Santa Fe, Argentina</p>
+    <p>Lugar de Residencia: Granadero, Santa Fe, Argentina</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reiciendis rerum culpa cum blanditiis dicta mollitia, vitae qui, earum quisquam cupiditate sapiente. Nam fugit aspernatur nulla sunt quae officiis quam!</p>
+</section>
+
+<button class="nav-boton" onclick="accion2()">Contacto</button>
+<section class="nav-enlace2 desaparece2">    
+
+    <ul>
+        <li>Tel: 34766661111</li>
+        <li>E-MAIL: Natalia.Paola@ejemplo.com</li>
+    </ul>
+    <div class="social">
+        <a href="#"><img src="css/face.jpg" alt="facebook"style="width:50px;height:50px;"></a>
+        <a href="#"><img src="css/wzp.jpg" alt="whatsapp"style="width:50px;height:50px;"></a>
+        <a href="#"><img src="css/linkedin.jpg" alt="linkedin"style="width:50px;height:50px;"></a>
+        <a href="#"><img src="css/insta.jpg" alt="instagram"style="width:50px;height:50px;"></a>
+    </div>
+</section>
+    
+<button class="nav-boton" onclick="accion3()">Aptitudes</button>
+<section class="nav-enlace3 desaparece3">
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, aperiam, libero tenetur unde aspernatur voluptatem voluptate reiciendis soluta earum nam quasi expedita accusamus fugiat ipsam consequuntur repellat explicabo! Suscipit, quidem?</p>
+</section>
+
+
+<button class="nav-boton" onclick="accion4()">Experiencia</button>
+<section class="nav-enlace4 desaparece4">
+    
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias maiores doloribus dignissimos ratione ad natus illo qui maxime, laboriosam ullam aspernatur obcaecati. Iusto fugiat nulla, placeat quo quae numquam non.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident vel ut molestiae dignissimos dolorem odio amet minus, incidunt deserunt nemo voluptatibus totam ab explicabo ullam ducimus temporibus quia magnam nam.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident vel ut molestiae dignissimos dolorem odio amet minus, incidunt deserunt nemo voluptatibus totam ab explicabo ullam ducimus temporibus quia magnam nam.</p>
+</section>
+</nav>
+
+
+
+ <!-- dentro de esta etiqueta se trabaja en java script -->
+    <script> 
+        function accion1(){
+            console.log('está funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace1');
+            for(var i = 0; i< ancla.length; i++){
+                ancla[i].classList.toggle('desaparece1');
+            }
+        }
+
+        function accion2(){
+            console.log('está funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace2');
+            for(var i = 0; i< ancla.length; i++){
+                ancla[i].classList.toggle('desaparece2');
+            }
+        }
+
+        function accion3(){
+            console.log('está funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace3');
+            for(var i = 0; i< ancla.length; i++){
+                ancla[i].classList.toggle('desaparece3');
+            }
+        }
+
+        function accion4(){
+            console.log('está funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace4');
+            for(var i = 0; i< ancla.length; i++){
+                ancla[i].classList.toggle('desaparece4');
+            }
+        }
+       
+    </script>
+
+</body>
+</html>
+</body>
+</html>

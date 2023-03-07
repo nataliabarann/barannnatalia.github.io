@@ -1,0 +1,124 @@
+body {
+    background-image: url('fondo3.jpg');
+    background-position: center center;
+    height: 1000px;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 0 80px;
+    font-size:30px
+}
+header{
+    display: block;
+    margin: auto;
+    padding: 20px 30%;
+}
+.titulo{
+
+    font-size: 45px;
+}
+
+.perfil{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+.nav-boton{
+    background: none;
+    color: #000000;
+    padding: 10px 0px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+.social{
+
+    border-radius: 50%;
+    display: flex;
+    margin: 0;
+    }
+    img{
+        border-radius: 50%;
+        display: inline-block;
+        margin: auto;
+        max-width: 100%;
+    }
+
+
+section{
+    display: inline-block;
+}
+.desaparece1{
+    display: none;
+}
+.desaparece2{
+    display: none;
+}
+.desaparece3{
+    display: none;
+}
+.desaparece4{
+    display: none;
+}
+
+@media (max-width: 950px) {
+
+    header{
+        display: block;
+        margin: auto;
+        padding: 20px 20%;
+    }
+    
+}
+@media (max-width: 685px) {  /*responsive.. hasta los 600px*/
+    nav{
+        
+        flex-direction: column;
+    }
+
+    .nav-boton{
+        display: flex;
+    }
+    .desaparece1{
+        display: none;
+    }
+    .desaparece2{
+        display: none;
+    }
+    .desaparece3{
+        display: none;
+    }
+    .desaparece4{
+        display: none;
+    }
+    header{
+        display: block;
+        margin: auto;
+        padding: 20px 0;
+    }
+    img{
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+
+    header{
+        display: block;
+    
+        padding: 5px;
+    }
+
+}
